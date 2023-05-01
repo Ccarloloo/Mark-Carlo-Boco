@@ -135,11 +135,14 @@ nav.sticky .menu-btn {
   height: 100vh;
   width: 100%;
   background-image: url("images/home.jpg");
-  background-size: contain;
-  background-position: right;
+  background-size: cover;
+  background-position: initial;
   background-attachment: fixed;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .home .home-content {
@@ -149,37 +152,39 @@ nav.sticky .menu-btn {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center; /* center text inside .home-content */
 }
 
 .home .text-one {
   font-size: 30px;
   color: #2272FF; /* neon blue */
-  }
-  
-  .home .text-two {
-  color: #1D1D1D; /* black */
+}
+
+.home .text-two {
+  color: #fdfcfc; /* black */
   font-size: 75px;
   font-weight: 600;
   margin-left: -3px;
-  }
+}
 
 .home .text-three {
   font-size: 40px;
   margin: 5px 0;
   color: #2272FF; /* neon blue */
-  }
-  
-  .home .text-four {
-  font-size: 23px;
-  margin: 5px 0;
-  color: #000000; /* yellow */
-  }
-
-.home .button {
-  margin: 14px 0;
 }
 
-.home .button button {
+.home .text-four {
+  font-size: 23px;
+  margin: 5px 0;
+  color: #ffffff; /* yellow */
+}
+
+.button {
+  margin: 14px 0;
+  align-self: center; /* align button to center */
+}
+
+.button button {
   outline: none;
   padding: 8px 16px;
   border-radius: 6px;
@@ -189,13 +194,13 @@ nav.sticky .menu-btn {
   cursor: pointer;
   border: 2px solid transparent;
   transition: all 0.4s ease;
-  }
+}
 
-.home .button button:hover {
+.button button:hover {
   border-color: #2272FF; 
   background-color: #000000; 
   color: #ffffff; 
-  }
+}
 
 /* About Section Styling */
 /* Those Elements Where We Have Apply Same CSS,
